@@ -1,0 +1,9 @@
+<Solution>
+  <Folder Name="/database/">
+    <File Path="schema.sql" />
+    <File Path="seed.sql" />
+    <File Path="stored_procedures.sql" />
+  </Folder>
+  <Project Path="ReservationEngine.Api/ReservationEngine.Api.csproj" />
+  <Project Path="ReservationEngine.Tests/ReservationEngine.Tests.csproj" />
+</Solution>
