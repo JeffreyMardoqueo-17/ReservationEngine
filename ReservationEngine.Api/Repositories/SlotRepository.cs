@@ -5,12 +5,11 @@ using ReservationEngine.Api.Models.Entities;
 namespace ReservationEngine.Api.Repositories;
 
 /// <summary>
-/// Implementación de <see cref="ISlotRepository"/> basada en Dapper y Stored Procedures en SQL Server.
+/// Implementación de <see cref="ISlotRepository"/> basada en Dapper y Stored Procedures en SQL Server
 /// </summary>
 public sealed class SlotRepository : SqlRepositoryBase, ISlotRepository
 {
-    public SlotRepository(IDbConnectionFactory connectionFactory)
-        : base(connectionFactory)
+    public SlotRepository(IDbConnectionFactory connectionFactory) : base(connectionFactory)
     {
     }
 
