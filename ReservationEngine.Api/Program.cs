@@ -1,10 +1,19 @@
+using ReservationEngine.Api.Repositories;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
+//agrego como singleton la conexioN
+builder.Services.AddSingleton<IDbConnectionFactory, SqlConnectionFactory>();
+
+//serviios
+builder.Services.AddScoped<ISlotRepository, SlotRepository>();
+
 builder.Services.AddControllers();
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 builder.Services.AddOpenApi();
+
 
 var app = builder.Build();
 
